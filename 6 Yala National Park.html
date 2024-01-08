@@ -3,124 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conservation</title>
-    <link rel="stylesheet" href="css/animals_in_srilanka.css">
+    <title>Yala Park</title>
+    <link rel="stylesheet" href="css/yala.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
-    <!-- to display icons on footer -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- to diplay menu icon in nav bar  -->
 </head>
 <body>
-    <section class="header"> 
-        <header>
-        <div class="navbar">
-            <img src="Images/srilankan-high-resolution-logo.jpeg" class="Logo">
 
 
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa fa-stack-exchange"></i>
-                </label>
-                
-                
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <button class="dropbtn">PLACES</button>
-                        <div class="dropdown-list">
-                            <a href="6 Yala National Park.html">1.Yala National Park</a>
-                            <a href="7 Wilpattu National Park.html">2.Wilpathu National Park</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="dropbtn">SPECIES</button>
-                        <div class="dropdown-list">
-                            <a href="5 Animals in Sri Lanka.html">1.Endemic Animals</a>
-                            <a href="4 Sri Lankan Leopard.html">2.Srilankan Leopard</a>              
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="dropbtn">ABOUT Wildlife</button>
-                        <div class="dropdown-list">
-                            <a href="2 Introduction_page.html">1.Introduction</a>
-                            <a href="3 Department of Wildlife Conservation.html">2.conservation</a>              
-                        </div>
-                    </li>
-                 
-                </ul>               
-                
-            </nav>
-        </div>
-    </header>
-</section>
-<main>
-    <section class="top page">
-    <div class="container"></div>
-    <div class="row">
-        <div class="col">
-            <h1>Yala National Park</h1>
-            <p>Situated in Sri Lanka’s south-east hugging the panoramic Indian Ocean, Yala was designated a wildlife sanctuary in 1900 and was designated a national park in 1938. Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards, majestic elephants, sloth bears, sambars, jackals, spotted dear, peacocks, and crocodiles. The best time to visit Yala is between February and July when the water levels of the park are quite low, bringing animals into the open.
-               
-            </p> 
+    <header>
+         <!-- java sript -->
+    <script type="text/javascript">
+    let hrElement;
+    let counter =100;
+    for (let i = 0; i < counter; i++) {
+        hrElement = document.createElement("HR");
+        //  Animation style
+        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+    //    animation duration
+        hrElement.style.animationDuration = 2 + Math.random() * 3 + "s";
+        // animation delay 
+        hrElement.style.animationDelay = Math.random() * 5 + "s";
 
-            <button type="button" onclick="window.location.href='https://www.yalasrilanka.lk/about-yala.html'" class="read-more">Learn More</button>
-           
-        </div>
-        <div class="col">
+        document.body.appendChild(hrElement);
+    }
+    </script>
+
+   <section class="header">
+   
+    <div class="navbar">
+        <img src="Images/srilankan-high-resolution-logo.jpeg" class="Logo">
+
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="Webpages/1 homepart1.html">Home</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">PLACES</button>
+                    <div class="dropdown-list">
+                        <a href="Webpages/6 Yala National Park.html">1.Yala National Park</a>
+                        <a href="Webpages/7 Wilpattu National Park.html">2.Wilpathu National Park</a>
+                    </div>
+                    
+
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">SPECIES</button>
+                    <div class="dropdown-list">
+                        <a href="Webpages/5 Animals in Sri Lanka.html">1.Endemic Animals</a>
+                        <a href="Webpages/4 Sri Lankan Leopard.html">2.Srilankan Leopard</a>              
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">ABOUT Wildlife</button>
+                    <div class="dropdown-list">
+                        <a href="Webpages/2 Introduction_page.html">1.Introduction</a>
+                        <a href="Webpages/3 Department of Wildlife Conservation.html">2.conservation</a>              
+                    </div>
+                </li>
+             
+            </ul>               
             
-            <div class="card card1"> 
-                <a href="6 Yala National Park.html"><h5>About Yala National park</h5>
-                </a>
+        </nav>
+<div class="word">
+                <span>Y</span>
+                <span>A</span>
+                <span>L</span>
+                <span>A</span>
+               
             </div>
 
-            <div class="card card2">
-                <a href="7 Wilpattu National Park.html">
-                    <h5>Wilpattu National Park</h5>
-                </a>
-            </div>
-            <div class="card card3"> 
-                    <h5>About Animals.</h5>
-                    <a href="#about1">
-                    <ol><li>Mammals.</li></ol></a>
-                        
-                    <a href="#about">
-                        <ol><li>Birds</li>
-                    </ol></a>
-                    <ol>
-                        <li>Amphibians.</li>
-                        <li>Reptiles.</li>
-                        <li>Fish.</li>
-                        
-                    </ol>
-                </div>
+        <div class="text-box">
+            
+        
+            <h1>National Park</h1>
+            <p>Yala National Park is the most visited and second largest national park in Sri Lanka, bordering the Indian Ocean. The park consists of five blocks, three of which are now open to the public. There are also two adjoining parks, Kumana National Park or 'Yala East' and Lunugamvehera National Park. The blocks have individual names, such as Palatupana (Block 1). It is situated in the southeastern region of the country, in the Southern Province and Uva Province.</p>
+            <a href=""class="btn">Explore More</a>
         </div>
     </div>
+    </section>
+</header>
+    
 
+</section>
+                  <!-- About yala -->
+               <section class="about-yala">
+                <section class="heading"><h1>About Yala Park</h1>
+                </section>
+                
+   
+        <div class="container">
+        <div class="column">
+            <h2>Location :</h2>
+            <p>Yala National Park is located in the south east of Sri Lanka around 20km southwest of Tissamaharama. Part of the reserve borders the Indian Ocean. It takes less than 10-minutes to reach the entrance of the reserve from Chena Huts, which sits in the park’s wildlife-rich buffer zone. Colombo is around a 300-kilometre drive away, which takes five hours.</p>
+            <a href="https://www.ugaescapes.com/destinations/yala.html" class="read-more">Main source</a>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15857.817998947383!2d81.4718847!3d6.4639613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1704612700296!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            <h2>Wonder of Yala :</h2>   
+                <div class="slider1">
+                    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w2I3c1f-N0Q?si=DBRWzvRXnI1iveHT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+            
+            
+            </div>
+
+        </div>
+
+        <div class="column">
+            <h2>TOPOGRAPHY OF YALA:</h2>
+            <p>Yala is located in the dry zone of the island and is dominated by scrubby bush and monsoon forests. The reserve is predominantly flat yet punctuated by brackish lakes, grasslands and vast granite outcrops whilst sand dunes characterise its coastal boundary. The park sits in the semi dry zone of the island and receives rainfall from the north easterly monsoon.</p>
+            <img src="Images/Yala-Body (1).jpg">
+        
+             <h2>WILDLIFE IN YALA :</h2>
+             <p>Yala National Park is the best reserve in Sri Lanka for seeing a wide variety of wildlife, and in particular leopards, elephants and sloth bears. There are approximately 215 bird species resident in the park, including seven endemics, along with 44 mammals</p>
+            <img src="Images/Yala-Body-3.jpg">
+            
+            <h2>GUIDE TO YALA :</h2>
+            <p>Yala comprises five blocks, and while most game drives take place in Block I (where wildlife sightings are arguably the most rewarding), game drives can and do occur in other blocks within the reserve. This is much more likely in September and October (at the height of the dry season) when Block I is often closed to visitors for around six weeks to allow animals unrestricted freedom of movement.</p>
+            <img src="Images/Yala-Body-2.jpg">
+            <a href="https://www.ugaescapes.com/destinations/yala.html" class="read-more">Main source</a>
+
+        </div>
+    </div>
+               </section>
+          
+    
+                  <!-- end about yala  -->
+
+                  <section class="species">
+                    <section class="heading"><h1>Endemic Animals</h1>
+                    </section>
+                    <div class="container">
+            <section class="col"><ol>
+                <h2>Most Popular Species</h2>
+                    <li>1.Sri Lankan Leopard</li>
+                     <li>2.Sri Lankan Sloth Bear</li>
+                     <li>3.Sri Lankan Elephants</li>
+                     <li>4.Toque Macaque Monkeys</li>
+                     <li>5.Fishing Cat</li>
+                     <a href="https://www.thingstodosrilanka.com/5-types-of-animals-you-can-see-in-yala/" class="read-more">Main source</a>
+
+                </ol>
+               
+        </section>
+         
+         
+              
+        
+                <section class="col">
+                    <div class="slider">
+                        <div class="slides">
+                            <!-- radio button start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                
+                            <!-- radio button ending -->
+                            <!-- slide images start -->
+                            
+                            <div class="slide first">
+                                <img src="Images/leo slider.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/bear slider.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/elepant slider.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/monky slider.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="Images/catslider.jpg" alt="">
+                            
+                            
+                            <a href="https://www.ugaescapes.com/destinations/yala.html" class="read-more">Main source</a>
+
+                            </div>
+
+                       
+                            
+        
+                            <!-- slide image ending -->
+                           
+                            <!-- manual navigation start  -->
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                                <label for="radio5" class="manual-btn"></label>
+                            </div>
+                                        <!-- manual navigation end  -->
+                
+                    </div>
+                    <!-- image slide endind -->
+                    </div>
+                
+                </section>
+
+
+        </section>
+    
+
+   <!-- about accomidation -->
+
+
+   <section class="accomidation">
+    
+       <h1>Accommodation</h1>
+       <p>With careful planning, two days are enough time to explore three of the area's parks: Yala, Uda Walawe, and Bundala. See lots of animals (maybe even a leopard), spend the night in high-end safari tents, and get a taste of village life or Buddhist history along the way.</p>
+       <div class="row">
+        <div class="col">
+            <div class="card card1">
+                <a href="https://www.google.com/travel/search?q=yala%20accommodation%20sri%20lanka&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72430562%2C72440516%2C72442338%2C72457720%2C72458707%2C72466827%2C72467112&hl=en-LK&gl=lk&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QARgHEgcI6A8QARgIGAEyAhAAKgcKBToDTEtS&qs=CAEyE0Nnb0luYTJIOUs3b21ZVmNFQUU4CkIJCSIcbkyyAPoxQgkJ7H9_7ZhVD3xCCQmd1oHuQmcKXA&ap=aAG6AQhvdmVydmlldw&ictx=1&ved=0CAAQ5JsGahcKEwjQ0ZPR0caDAxUAAAAAHQAAAAAQBQ">
+
+                <h3>Yala Caravan Village</h3></a>  
+                <p>To have diferant expriance with luxtury feel.</p>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card card2">
+            <a href="https://www.google.com/travel/search?q=yala%20accommodation%20sri%20lanka&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72430562%2C72440516%2C72442338%2C72457720%2C72458707%2C72466827%2C72467112&hl=en-LK&gl=lk&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QARgHEgcI6A8QARgIGAEyAhAAKgcKBToDTEtS&qs=CAEyE0Nnb0lvcmk0NDZTV2dQMHhFQUU4CkIJCSIcbkyyAPoxQgkJ7H9_7ZhVD3xCCQmd1oHuQmcKXA&ap=aAG6AQhvdmVydmlldw&ictx=1&ved=0CAAQ5JsGahcKEwjgxoCA0caDAxUAAAAAHQAAAAAQCw">
+
+                <h3>Yala Villa</h3>
+                <p>Good location overall for sightseeing, recreation, dining and getting around</p></a>
+                </a>
+            </div>
+        </div>
+    
+        <div class="col">
+           
+            <div class="card card3">
+                <a href="">
+                <h3>Nil sisila beach resort-Yala</h3>
+                <p>Very close to beach. Such a great place to see wonder of Yala</p>
+                </a> 
+            </div>
+        </div>
+        <a href="https://www.booking.com/region/lk/yala-region.en.html?aid=373420;label=yala-region-R*JJvd5ksmaWF_gkLrwBMgS626123127530:pl:ta:p1:p2:ac:ap:neg:fi:tiaud-146342135830:kwd-20761228914:lp1009921:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Ydj4ck6nIj5YRjPru0SpaEk;ws=&gad_source=1&gclid=CjwKCAiA7t6sBhAiEiwAsaieYjHv-Wt-EWxH7irDdJT8OptiBzF2ioF4-wMwiuksYCRCzsoUd-YFSBoCJTYQAvD_BwE" class="read-more">Main source
+        </a>
+    </div>
+</div>
+
+
+   </section>
+   <section class="fun activities">activies</section>
+   
+    
  
 </main>
-<footer>
-    <div class="footercontainer">
-        <div class="linkicons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-         
-         <div class="footerNav">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.wnpssl.org/news/">News</a></li>
-                <li><a href="https://www.sltda.gov.lk/en">About Us</a></li>
-                <li><a href="https://www.srilanka.travel/contact-details">Contact Us</a></li>
-                <li><a href="3 Department of Wildlife Conservation.html">Our team</a></li>
-            </ol>
-        </div>
-        <p>Copyright &copy;2023; Designed by <span class="designer">Aloka kavitha de silva</span></p>
-</footer>
-
 
 
 
